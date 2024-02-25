@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Крестики-нолики</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <form class="initial_value">
+        <label for="selectCountPlayers" class="initial_abel">Выберите количество игроков</label>
+        <select id="selectCountPlayers">
+            <option value=2>2 игрока</option>
+            <option value=3>3 игрока</option>
+            <option value=4>4 игрока</option>
+        </select>
+    </form>
+    <form class="initial_value">
+        <label for="sizeBoard" class="initial_label">Введите количество полей</label>
+        <input id="sizeBoard" type="number" min="3" size=3 value=3>   
+    </form>
+    <h2 class="move_player"></h2>
+    <div id="board"></div>
+
+    <div id="modal" class="hidden">
+        <div id="modal__window">
+            <h2></h2>
+            <div id="modal__buttons">
+                <button class="reset">Играть еще</button>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <button class="reset">С начала</button>
+    </div>
+
+    <script src="logic.js"></script>
+    <script src="ui.js"></script>
+</body>
+
+</html>
